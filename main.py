@@ -7,7 +7,7 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Advanced OS Project")
-        self.geometry("800x600")
+        self.geometry("800x400")
         self.resizable(False, False)
         self.create_widgets()
     def draw_graph(self, path,num, page_faults = 0, totalMovement = 0, history = []):
