@@ -23,13 +23,8 @@ def Second_Chance(reference_string, frames):
             page_faults += 1
         else:
             second_chance[page_table.index(page)] = True
-
-        print("Page Table:", page_table)
+            
         history.append(page_table.copy())
 
-    print("Total page faults:", page_faults)
     return history, page_faults
 
-
-frames = 3
-print(Second_Chance([10,20,30,50], frames))
